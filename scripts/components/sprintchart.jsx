@@ -43,7 +43,6 @@ var SprintChartComponent = React.createClass({
         if (res.ok) {
           var feed = res.body.feed;
           var entries = feed.entry;
-          entries.splice(0, 1);
 
           var doneKey = feed.title.$t.toLowerCase().replace(/[()\/]/g, '');
           entries.forEach(function (entry) {
