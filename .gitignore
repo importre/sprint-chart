@@ -1,7 +1,6 @@
 node_modules
 .tmp
 .idea
-dist/js/*.map
 
 ### Vim template
 [._]*.s[a-w][a-z]
