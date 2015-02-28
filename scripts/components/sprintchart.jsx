@@ -44,7 +44,7 @@ var SprintChartComponent = React.createClass({
           var feed = res.body.feed;
           var entries = feed.entry;
 
-          var doneKey = feed.title.$t.toLowerCase().replace(/[()\/]/g, '');
+          var doneKey = feed.title.$t.toLowerCase().replace(/[()\/\*]/g, '');
           entries.forEach(function (entry) {
             time.push(entry.gsx$time.$t);
             todo.push(parseInt(entry.gsx$todothissprint.$t));
